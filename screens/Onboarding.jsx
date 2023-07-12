@@ -31,7 +31,7 @@ export const OnboardingScreen = ({navigation}) => {
                     subtitle: (
                         <VStack flex={1 / 4} justifyContent={"space-between"}>
                             <Text>Done with React Native Onboarding Swiper</Text>
-                            <Button size="lg" colorScheme="primary" onPress={() => navigation.replace('Welcome')}>GET
+                            <Button size="lg" colorScheme="primary" onPress={() => navigation.replace('Tabs')}>GET
                                 STARTED</Button>
                         </VStack>
                     ),

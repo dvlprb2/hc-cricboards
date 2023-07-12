@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NativeBaseProvider} from "native-base";
 import {LinearGradient} from "expo-linear-gradient";
 import {SafeAreaProvider} from "react-native-safe-area-context";
+import {TabScreen} from "./screens/Tabs";
 import {customTheme} from "./theme";
 import {
     Montserrat_100Thin,
@@ -74,6 +75,11 @@ export default function App() {
                             <Stack.Screen
                                 name="Onboarding"
                                 component={OnboardingScreen}
+                                options={{headerShown: false}}
+                            />
+                             <Stack.Screen
+                                name="Tabs"
+                                component={TabScreen}
                                 options={{headerShown: false}}
                             />
                         </Stack.Navigator>
