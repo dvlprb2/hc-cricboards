@@ -26,7 +26,7 @@ import {
     Montserrat_900Black_Italic,
     useFonts
 } from "@expo-google-fonts/montserrat";
-import {OnboardingScreen} from "./screens/Home";
+import {OnboardingScreen} from "./screens/Onboarding";
 
 // Define the config
 const config = {
