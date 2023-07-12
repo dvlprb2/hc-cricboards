@@ -87,29 +87,30 @@ export default function App() {
                                 component={TabScreen}
                                 options={{headerShown: false}}
                             />
+                            <Stack.Group navigationKey="new_match" screenOptions={headerOptions}>
+                                <Stack.Screen
+                                    name="Teams"
+                                    component={TeamScreen}
+                                />
+                                <Stack.Screen
+                                    name="Toss"
+                                    component={TossScreen}
+                                />
+                                <Stack.Screen
+                                    name="Openers"
+                                    component={OpenerScreen}
+                                />
+                                <Stack.Screen
+                                    name="Bowler"
+                                    component={BowlerScreen}
+                                />
+                                <Stack.Screen
+                                    name="Innings"
+                                    component={InningScreen}
+                                />
+                            </Stack.Group>
                         </Stack.Navigator>
-                        <Stack.Group navigationKey="new_match" screenOptions={headerOptions}>
-                            <Stack.Screen
-                                name="Teams"
-                                component={TeamScreen}
-                            />
-                            <Stack.Screen
-                                name="Toss"
-                                component={TossScreen}
-                            />
-                            <Stack.Screen
-                                name="Openers"
-                                component={OpenerScreen}
-                            />
-                            <Stack.Screen
-                                name="Bowler"
-                                component={BowlerScreen}
-                            />
-                            <Stack.Screen
-                                name="Innings"
-                                component={InningScreen}
-                            />
-                        </Stack.Group>
+
                     </NavigationContainer>
                 </SafeAreaProvider>
             </NativeBaseProvider>
