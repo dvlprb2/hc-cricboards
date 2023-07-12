@@ -4,15 +4,12 @@ import {Heading, Icon} from "native-base";
 import {headerOptions} from "../theme";
 import {HomeScreen} from "./Home";
 import {Feather} from "@expo/vector-icons";
+import {SearchScreen} from "./Search";
 
 const Tab = createBottomTabNavigator();
 
 const ProfileScreen = () => {
     return (<Heading>Profile</Heading>)
-}
-
-const SearchScreen = () => {
-    return (<Heading>Player search Screen</Heading>)
 }
 
 const options = {
