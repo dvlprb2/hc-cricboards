@@ -5,7 +5,7 @@ import {NativeBaseProvider} from "native-base";
 import {LinearGradient} from "expo-linear-gradient";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {TabScreen} from "./screens/Tabs";
-import {customTheme} from "./theme";
+import {customTheme, headerOptions} from "./theme";
 import {
     Montserrat_100Thin,
     Montserrat_100Thin_Italic,
@@ -28,6 +28,11 @@ import {
     useFonts
 } from "@expo-google-fonts/montserrat";
 import {OnboardingScreen} from "./screens/Onboarding";
+import {TeamScreen} from "./screens/match/Teams";
+import {TossScreen} from "./screens/match/Toss";
+import {OpenerScreen} from "./screens/match/Openers";
+import {BowlerScreen} from "./screens/match/Bowler";
+import {InningScreen} from "./screens/match/Inning";
 
 // Define the config
 const config = {
@@ -77,12 +82,34 @@ export default function App() {
                                 component={OnboardingScreen}
                                 options={{headerShown: false}}
                             />
-                             <Stack.Screen
+                            <Stack.Screen
                                 name="Tabs"
                                 component={TabScreen}
                                 options={{headerShown: false}}
                             />
                         </Stack.Navigator>
+                        <Stack.Group navigationKey="new_match" screenOptions={headerOptions}>
+                            <Stack.Screen
+                                name="Teams"
+                                component={TeamScreen}
+                            />
+                            <Stack.Screen
+                                name="Toss"
+                                component={TossScreen}
+                            />
+                            <Stack.Screen
+                                name="Openers"
+                                component={OpenerScreen}
+                            />
+                            <Stack.Screen
+                                name="Bowler"
+                                component={BowlerScreen}
+                            />
+                            <Stack.Screen
+                                name="Innings"
+                                component={InningScreen}
+                            />
+                        </Stack.Group>
                     </NavigationContainer>
                 </SafeAreaProvider>
             </NativeBaseProvider>
