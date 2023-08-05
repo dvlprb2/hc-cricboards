@@ -9,7 +9,6 @@ import {GoogleSignin} from '@react-native-google-signin/google-signin';
 // screens
 import {OnboardingScreen} from './screens/Onboarding';
 import {LoginScreen} from './screens/Login';
-import {WelcomeScreen} from './screens/Welcome';
 import {TabScreen} from './screens/tabs';
 import {ClubScreen} from './screens/club';
 import {TeamScreen} from './screens/match/Teams';
@@ -44,11 +43,6 @@ export default function App(): Element {
               <Stack.Screen
                 name="Login"
                 component={LoginScreen}
-                options={{headerShown: false}}
-              />
-              <Stack.Screen
-                name="Welcome"
-                component={WelcomeScreen}
                 options={{headerShown: false}}
               />
               <Stack.Screen

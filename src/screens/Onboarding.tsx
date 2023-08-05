@@ -41,8 +41,8 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({
         containerStyles={styles.container}
         pages={[
           {
-            backgroundColor: '#fff',
-            image: <Image source={require('../assets/circle.png')} />,
+            backgroundColor: '#f7f7f7',
+            image: <Image source={require('../assets/onboarding1.jpeg')} />,
             title: (
               <Text fontSize={24} fontWeight="600" mb={2}>
                 ONBOARDING
@@ -51,8 +51,8 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({
             subtitle: <Text>Done with React Native Onboarding Swiper</Text>,
           },
           {
-            backgroundColor: '#fff',
-            image: <Image source={require('../assets/circle.png')} />,
+            backgroundColor: '#f7f7f7',
+            image: <Image source={require('../assets/onboarding2.jpeg')} />,
             title: (
               <Text fontSize={24} fontWeight="600">
                 ONBOARDING
@@ -61,8 +61,8 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({
             subtitle: <Text>Done with React Native Onboarding Swiper</Text>,
           },
           {
-            backgroundColor: '#fff',
-            image: <Image source={require('../assets/circle.png')} />,
+            backgroundColor: '#f7f7f7',
+            image: <Image source={require('../assets/onboarding3.jpeg')} />,
             title: (
               <Text fontSize={24} fontWeight="600">
                 ONBOARDING
