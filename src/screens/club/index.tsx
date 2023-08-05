@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Animated, Dimensions, Pressable, StatusBar} from 'react-native';
 import {SceneMap, TabView} from 'react-native-tab-view';
 import {Box, Fab, Icon, Text} from 'native-base';
+import {MembersTab} from './Members';
 import {MatchesTab} from './Matches';
 import {Feather} from '@expo/vector-icons';
 
@@ -11,6 +12,7 @@ const initialLayout = {
 
 const renderScene = SceneMap({
   first: MembersTab,
+  second: MatchesTab,
 });
 
 export const ClubScreen: React.FC<{navigation: any}> = ({navigation}) => {
@@ -42,6 +44,7 @@ export const ClubScreen: React.FC<{navigation: any}> = ({navigation}) => {
               <Pressable
                 onPress={() => {
                   console.log(i);
+                  setIndex(i);
                 }}>
                 <Animated.Text style={{color}}>{route.title}</Animated.Text>
               </Pressable>
@@ -74,6 +77,7 @@ export const ClubScreen: React.FC<{navigation: any}> = ({navigation}) => {
             New Match
           </Text>
         }
+        onPress={() => navigation.replace('Teams')}
       />
     </>
   );
