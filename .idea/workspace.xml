@@ -1,17 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d87ef9c9-2785-42e4-b0ca-b20a26f343ad" name="Changes" comment="Auth and Club CRUD completed" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2SlrFR5GX75hCOq5u9EBToecqQZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/developerb2/Documents/Projects/Side/CricBoards/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "/Users/developerb2/Documents/Projects/Side/CricBoards/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/screens/club" />
+      <recent name="$PROJECT_DIR$/screens/match" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/screens/tabs" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="d87ef9c9-2785-42e4-b0ca-b20a26f343ad" name="Changes" comment="" />
       <created>1686243308437</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686243308437</updated>
+      <workItem from="1689731907711" duration="8141000" />
+      <workItem from="1689741318390" duration="3373000" />
+      <workItem from="1689778354227" duration="2157000" />
+      <workItem from="1689809117644" duration="36000" />
+      <workItem from="1689809180337" duration="19338000" />
+      <workItem from="1690237471148" duration="6294000" />
+      <workItem from="1690298115501" duration="484000" />
     </task>
+    <task id="LOCAL-00001" summary="Auth and Club CRUD completed">
+      <option name="closed" value="true" />
+      <created>1690298387431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690298387431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/screens/Home.jsx" />
+        <option value="$PROJECT_DIR$/screens/Onboarding.jsx" />
+        <option value="$PROJECT_DIR$/screens/Search.jsx" />
+        <option value="$PROJECT_DIR$/screens/Tabs.jsx" />
+        <option value="$PROJECT_DIR$/screens/Welcome.jsx" />
+        <option value="$PROJECT_DIR$/screens/match/Bowler.jsx" />
+        <option value="$PROJECT_DIR$/screens/match/Inning.jsx" />
+        <option value="$PROJECT_DIR$/screens/match/Openers.jsx" />
+        <option value="$PROJECT_DIR$/screens/match/Teams.jsx" />
+        <option value="$PROJECT_DIR$/screens/match/Toss.jsx" />
+        <option value="$PROJECT_DIR$/screens/club/index.jsx" />
+        <option value="$PROJECT_DIR$/screens/club/Matches.jsx" />
+        <option value="$PROJECT_DIR$/screens/club/Members.jsx" />
+        <option value="$PROJECT_DIR$/components/ClubCard.jsx" />
+        <option value="$PROJECT_DIR$/components/EmptyList.jsx" />
+        <option value="$PROJECT_DIR$/components/MatchCard.jsx" />
+        <option value="$PROJECT_DIR$/components/SearchBar.jsx" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Auth and Club CRUD completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth and Club CRUD completed" />
   </component>
 </project>
