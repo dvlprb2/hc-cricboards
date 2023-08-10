@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
 import {
   Button,
@@ -14,12 +14,6 @@ import {
 import {ClubCard} from '../../components/ClubCard';
 import {MatchCard} from '../../components/MatchCard';
 import {Plus} from 'react-native-feather';
-import {
-  ClubDocumentData,
-  createClub,
-  getClubsByUser,
-} from '../../services/clubs';
-import {getCurrentUser} from '../../services/auth';
 
 interface HomeScreenProps {
   navigation: any; // Replace 'any' with the actual navigation prop type
@@ -30,25 +24,14 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   const [showModal, setShowModal] = useState(false);
   const [clubName, setClubName] = useState('');
   const [isInvalid, setIsInvalid] = useState(false);
-  const [clubs, setClubs] = useState<ClubDocumentData[]>([]);
+  const [clubData] = useState(clubs);
+  const [recentMatchData] = useState(recentMatches);
 
-  useEffect(() => {
-    getClubsByUser().then(querySnapshot => {
-      querySnapshot.forEach(doc => {
-        // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, ' => ', doc.data());
-      });
-      const data: ClubDocumentData[] = [];
-      querySnapshot.forEach(doc => data.push(doc.data() as ClubDocumentData));
-      setClubs(data);
-    });
-  }, []);
-
-  const renderClubCard = ({item}: {item: ClubDocumentData}) => (
+  const renderClubCard = ({item}: {item: any}) => (
     <ClubCard item={item} navigation={navigation} />
   );
 
-  const renderMatchCard = ({item}: {item: ClubDocumentData}) => (
+  const renderMatchCard = ({item}: {item: any}) => (
     <MatchCard item={item} navigation={navigation} />
   );
 
@@ -56,25 +39,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
     setShowModal(false);
     setIsInvalid(false);
     setClubName('');
-  };
-
-  const handleAddClub = async () => {
-    if (clubName.length < 3) {
-      setIsInvalid(true);
-    } else {
-      setIsInvalid(false);
-
-      const currentUser = await getCurrentUser();
-
-      createClub({
-        name: clubName,
-        members: [],
-        owner: currentUser?.id!!,
-      }).then(r => {
-        console.log(r.id);
-        onModalClose();
-      });
-    }
   };
 
   return (
@@ -85,7 +49,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
         </Heading>
         <FlatList
           horizontal
-          data={clubs}
+          data={clubData}
           renderItem={renderClubCard}
           keyExtractor={(item, index) => index.toString()}
           showsHorizontalScrollIndicator={false}
@@ -98,7 +62,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
         </Heading>
         <FlatList
           horizontal
-          data={[]}
+          data={recentMatchData}
           renderItem={renderMatchCard}
           showsHorizontalScrollIndicator={false}
         />
@@ -118,22 +82,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
         }
         onPress={() => setShowModal(true)}
       />
-
-      {/* Uncomment this section when needed */}
-      {/* <Fab */}
-      {/*   renderInPortal={false} */}
-      {/*   shadow={2} */}
-      {/*   placement="bottom-right" */}
-      {/*   size="lg" */}
-      {/*   colorScheme="primary" */}
-      {/*   icon={<Icon color="white" as={Feather} name="plus" size="2xl" />} */}
-      {/*   label={ */}
-      {/*     <Text fontWeight={600} fontSize="xl" color="white"> */}
-      {/*       New Match */}
-      {/*     </Text> */}
-      {/*   } */}
-      {/*   onPress={() => navigation.replace('Teams')} */}
-      {/* /> */}
 
       <Modal
         isOpen={showModal}
@@ -162,11 +110,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
             </HStack>
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              size="full"
-              p={2}
-              _text={{fontSize: 18}}
-              onPress={handleAddClub}>
+            <Button size="full" p={2} _text={{fontSize: 18}}>
               Save
             </Button>
           </Modal.Footer>
@@ -175,6 +119,46 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
     </SafeAreaView>
   );
 };
+
+const clubs = [
+  {
+    name: 'Club 1',
+    members: 11,
+  },
+  {
+    name: 'Club 2',
+    members: 14,
+  },
+  {
+    name: 'Club 3',
+    members: 25,
+  },
+  {
+    name: 'Club 4',
+    members: 56,
+  },
+];
+
+const recentMatches = [
+  {
+    club: 'Club 1',
+    teamA: '100-9 (20)',
+    teamB: '100-9 (20)',
+    msg: 'Team A won by 2 wkts',
+  },
+  {
+    club: 'Club 2',
+    teamA: '100-9 (20)',
+    teamB: '100-9 (20)',
+    msg: 'Team B won by 2 wkts',
+  },
+  {
+    club: 'Club 1',
+    teamA: '100-9 (20)',
+    teamB: '100-9 (20)',
+    msg: 'Team A won by 2 wkts',
+  },
+];
 
 const styles = StyleSheet.create({
   container: {

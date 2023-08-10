@@ -28,15 +28,6 @@ export const TabScreen: React.FC = () => {
           tabBarIcon: homeTabBarIcon,
         }}
       />
-      {/*<Tab.Screen*/}
-      {/*  name="Search"*/}
-      {/*  component={SearchScreen}*/}
-      {/*  options={{*/}
-      {/*    ...options,*/}
-      {/*    tabBarIcon: ({color}) => <Search color={color} />,*/}
-      {/*    tabBarLabel: 'Players',*/}
-      {/*  }}*/}
-      {/*/>*/}
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}

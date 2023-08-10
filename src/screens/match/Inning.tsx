@@ -14,6 +14,7 @@ import {
   VStack,
 } from 'native-base';
 import {Feather} from '@expo/vector-icons';
+import { Check, RotateCcw } from "react-native-feather";
 
 export const InningScreen: React.FC<any> = ({navigation}) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -171,7 +172,7 @@ export const InningScreen: React.FC<any> = ({navigation}) => {
         placement="bottom-left"
         size="lg"
         colorScheme="primary"
-        icon={<Icon color="white" as={Feather} name="rotate-ccw" size="2xl" />}
+        icon={<RotateCcw color="#fff" />}
       />
 
       <Fab
@@ -180,7 +181,7 @@ export const InningScreen: React.FC<any> = ({navigation}) => {
         placement="bottom-right"
         size="lg"
         colorScheme="primary"
-        icon={<Icon color="white" as={Feather} name="check" size="2xl" />}
+        icon={<Check color="#fff" />}
         onPress={() => setIsOpen(!isOpen)}
       />
 

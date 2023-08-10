@@ -19,7 +19,7 @@ export const MatchCard: React.FC<MatchCardProps> = ({navigation, item}) => {
       backgroundColor="coolGray.50">
       <Stack p={4} space={2} justifyContent="space-between">
         <Text color="coolGray.600" fontWeight={400} fontSize={12}>
-          The Garden City
+          {item.club}
         </Text>
         <VStack space={2}>
           <HStack justifyContent="space-between">
@@ -27,7 +27,7 @@ export const MatchCard: React.FC<MatchCardProps> = ({navigation, item}) => {
               Team A
             </Heading>
             <Heading fontWeight={500} size="sm">
-              100-9 (20)
+              {item.teamA}
             </Heading>
           </HStack>
           <HStack justifyContent="space-between">
@@ -35,11 +35,11 @@ export const MatchCard: React.FC<MatchCardProps> = ({navigation, item}) => {
               Team B
             </Heading>
             <Heading fontWeight={500} size="sm">
-              100-9 (20)
+              {item.teamB}
             </Heading>
           </HStack>
         </VStack>
-        <Text color="primary.600">Team A won by 2 wkts</Text>
+        <Text color="primary.600">{item.msg}</Text>
       </Stack>
     </Box>
   );

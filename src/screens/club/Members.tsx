@@ -1,19 +1,8 @@
 import {SearchBar} from '../../components/SearchBar';
-import {
-  Badge,
-  Box,
-  Fab,
-  Heading,
-  HStack,
-  Icon,
-  Spacer,
-  Text,
-  VStack,
-} from 'native-base';
+import {Badge, Box, Heading, HStack, Spacer, Text, VStack} from 'native-base';
 import {FlatList} from 'react-native';
 import React from 'react';
 import {EmptyList} from '../../components/EmptyList';
-import {Feather} from '@expo/vector-icons';
 
 interface MemberData {
   id: string;
@@ -22,8 +11,7 @@ interface MemberData {
   matches: string;
 }
 
-
-export const MembersTab: React.FC<{navigation: any}> = ({navigation}) => {
+export const MembersTab: React.FC = () => {
   const renderItem = ({item}: {item: MemberData}) => {
     return (
       <Box borderBottomWidth="1" borderColor="coolGray.300" px={4} py={2}>
@@ -110,7 +98,7 @@ export const MembersTab: React.FC<{navigation: any}> = ({navigation}) => {
     <>
       <FlatList
         keyExtractor={item => item.id}
-        data = {data}
+        data={data}
         ListHeaderComponent={<SearchBar my={3} />}
         ListEmptyComponent={<EmptyList />}
         renderItem={renderItem}

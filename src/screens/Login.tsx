@@ -9,7 +9,6 @@ interface LoginScreenProps {
   navigation: any; // Replace 'any' with the actual navigation prop type
 }
 export const LoginScreen: React.FC<LoginScreenProps> = ({navigation}) => {
-
   return (
     <SafeAreaView style={styles.container}>
       <Center w="100%">

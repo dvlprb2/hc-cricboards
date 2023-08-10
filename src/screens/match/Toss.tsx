@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Center, Fab, Heading, Icon, Stack, VStack} from 'native-base';
 import {Feather} from '@expo/vector-icons';
 import {Pressable} from 'react-native';
+import {ArrowRight} from 'react-native-feather';
 
 interface TossScreenProps {
   navigation: any; // Update the type based on your navigation prop type
@@ -115,9 +116,7 @@ export const TossScreen: React.FC<TossScreenProps> = ({navigation}) => {
         placement="bottom-right"
         size="lg"
         colorScheme="primary"
-        icon={
-          <Icon color="white" as={Feather} name="chevrons-right" size="2xl" />
-        }
+        icon={<ArrowRight color="#fff" />}
         onPress={() => navigation.navigate('Openers')}
       />
     </>

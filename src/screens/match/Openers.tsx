@@ -13,6 +13,7 @@ import {
 } from 'native-base';
 import {Pressable, Vibration} from 'react-native';
 import {Feather} from '@expo/vector-icons';
+import {ArrowRight, Plus} from 'react-native-feather';
 
 interface Player {
   id: number;
@@ -23,17 +24,17 @@ interface Player {
 const players: Player[] = [
   {
     id: 1,
-    name: 'Cyan',
+    name: 'Player 1',
     isChecked: false,
   },
   {
     id: 2,
-    name: 'Yellow',
+    name: 'Player 2',
     isChecked: false,
   },
   {
     id: 3,
-    name: 'Violet',
+    name: 'Player 3',
     isChecked: false,
   },
 ];
@@ -114,7 +115,7 @@ export const OpenerScreen: React.FC<any> = ({navigation}) => {
         placement="bottom-left"
         size="lg"
         colorScheme="primary"
-        icon={<Icon color="white" as={Feather} name="plus" size="2xl" />}
+        icon={<Plus color="#fff" />}
         onPress={() => setShowModal(true)}
       />
 
@@ -124,9 +125,7 @@ export const OpenerScreen: React.FC<any> = ({navigation}) => {
         placement="bottom-right"
         size="lg"
         colorScheme="primary"
-        icon={
-          <Icon color="white" as={Feather} name="chevrons-right" size="2xl" />
-        }
+        icon={<ArrowRight color="#fff" />}
         onPress={() => navigation.navigate('Bowler')}
       />
 
@@ -151,14 +150,7 @@ export const OpenerScreen: React.FC<any> = ({navigation}) => {
                 borderRadius="sm"
                 variant="solid"
                 colorScheme={'primary'}
-                icon={
-                  <Icon
-                    as={Feather}
-                    name="plus"
-                    size="lg"
-                    color="warmGray.50"
-                  />
-                }
+                icon={<Plus color="#fff" />}
               />
             </HStack>
           </Modal.Body>

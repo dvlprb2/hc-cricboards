@@ -1,11 +1,10 @@
 import {Box, Heading, HStack, Stack, Text} from 'native-base';
 import {TouchableOpacity} from 'react-native';
-import {ClubDocumentData} from '../services/clubs';
 import React from 'react';
 
 interface ClubCardProps {
   navigation: any; // Update the type based on your navigation prop type
-  item: ClubDocumentData; // Update the type based on the expected item type
+  item: any; // Update the type based on the expected item type
 }
 
 export const ClubCard: React.FC<ClubCardProps> = ({navigation, item}) => {
@@ -30,7 +29,7 @@ export const ClubCard: React.FC<ClubCardProps> = ({navigation, item}) => {
               {item.name}
             </Heading>
             <Text color="coolGray.600" fontWeight="400">
-              {item.members.length} members
+              {item.members} members
             </Text>
           </Stack>
         </HStack>

@@ -13,7 +13,8 @@ import {
   useToast,
   VStack,
 } from 'native-base';
-import {Entypo, Feather} from '@expo/vector-icons';
+import {Feather} from '@expo/vector-icons';
+import { ArrowRight, Delete, Plus } from "react-native-feather";
 
 interface ListItem {
   title: string;
@@ -64,9 +65,7 @@ export const AddPlayer: React.FC = () => {
               borderRadius="sm"
               variant="solid"
               colorScheme={'primary'}
-              icon={
-                <Icon as={Feather} name="plus" size="lg" color="warmGray.50" />
-              }
+              icon={<Plus color="#fff" />}
               onPress={() => {
                 addItem(inputValue);
                 setInputValue('');
@@ -102,7 +101,7 @@ export const AddPlayer: React.FC = () => {
                     size="lg"
                     colorScheme="danger"
                     variant="solid"
-                    icon={<Icon as={Entypo} name="cross" size="xl" />}
+                    icon={<Delete color="#fff" />}
                     onPress={() => handleDelete(itemI)}
                   />
                 </HStack>
@@ -190,7 +189,7 @@ export const TeamScreen: React.FC<any> = ({navigation}) => {
         size="lg"
         colorScheme="primary"
         icon={
-          <Icon color="white" as={Feather} name="chevrons-right" size="2xl" />
+          <ArrowRight color="#fff" />
         }
         onPress={() => navigation.navigate('Toss')}
       />

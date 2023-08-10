@@ -13,5 +13,6 @@ import {it} from '@jest/globals';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
+  // @ts-ignore
   renderer.create(<App />);
 });
