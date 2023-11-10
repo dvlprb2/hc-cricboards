@@ -26,7 +26,9 @@ const Stack = createNativeStackNavigator();
 
 export default function App(): Element {
   useEffect(() => {
-    GoogleSignin.configure();
+    GoogleSignin.configure({
+      iosClientId: '568762015069-amrvjqt86hajab3dh4ja7i8vu6lcqjst.apps.googleusercontent.com'
+    });
   }, []);
 
   return (

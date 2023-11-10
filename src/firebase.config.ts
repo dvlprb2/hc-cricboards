@@ -15,22 +15,3 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-
-// const checkClubAndRedirect = email => {
-//   const clubRef = firebase.firestore().collection('clubs');
-//   clubRef
-//     .where('membersEmails', 'array-contains', email)
-//     .get()
-//     .then(querySnapshot => {
-//       if (!querySnapshot.empty) {
-//         // User is already added to at least one club
-//         navigation.navigate('Home');
-//       } else {
-//         // User is not added to any club
-//         navigation.navigate('CreateClub');
-//       }
-//     })
-//     .catch(error => {
-//       console.error('Error checking clubs:', error);
-//     });
-// };

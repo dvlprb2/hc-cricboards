@@ -1,14 +1,42 @@
 import {Box, Center, Heading, Image, Text} from 'native-base';
 import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {GoogleSigninButton} from '@react-native-google-signin/google-signin';
+import { Loading } from '../components/Loading';
+import { isSignedIn, googleSignIn } from '../services/auth';
 
 const login_bg = require('../assets/login_bg.jpg');
 
 interface LoginScreenProps {
-  navigation: any; // Replace 'any' with the actual navigation prop type
-}
+  navigation: any;
+};
+
 export const LoginScreen: React.FC<LoginScreenProps> = ({navigation}) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    isSignedIn().then(res => {
+      if (res) {
+        navigation.replace('Tabs');
+      } else {
+        setLoading(false);
+      }
+    });
+  }, [navigation]);
+
+  const handleSignIn = async () => {
+    const {userInfo} = await googleSignIn();
+    if (userInfo) {
+      navigation.replace('Tabs');
+    } else {
+      navigation.replace('Login');
+    }
+  };
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <Center w="100%">
@@ -42,7 +70,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({navigation}) => {
             style={styles.googleSigninBtn}
             size={GoogleSigninButton.Size.Wide}
             color={GoogleSigninButton.Color.Dark}
-            onPress={() => navigation.navigate('Tabs')}
+            onPress={handleSignIn}
           />
         </Box>
       </Center>
