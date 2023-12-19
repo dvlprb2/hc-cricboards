@@ -1,46 +1,150 @@
 [
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_antdesign.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_antdesign.ttf"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.cricboards.app-merged_res-34:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.cricboards.app-main-36:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.cricboards.app-merged_res-34:/drawable-mdpi_src_assets_onboarding3.jpeg.flat",
+        "source": "com.cricboards.app-main-36:/drawable-mdpi/src_assets_onboarding3.jpeg"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/drawable_rn_edit_text_material.xml.flat",
-        "source": "com.cricboards.app-main-36:/drawable/rn_edit_text_material.xml"
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_foundation.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_foundation.ttf"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.cricboards.app-merged_res-34:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cricboards.app-main-36:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_simplelineicons.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_simplelineicons.ttf"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.cricboards.app-merged_res-34:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cricboards.app-main-36:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
-        "merged": "com.cricboards.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.cricboards.app-main-36:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome5_solid.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome5_solid.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_evilicons.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_evilicons.ttf"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontisto.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontisto.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/drawable-mdpi_src_assets_onboarding2.jpeg.flat",
+        "source": "com.cricboards.app-main-36:/drawable-mdpi/src_assets_onboarding2.jpeg"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_feather.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_feather.ttf"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cricboards.app-main-36:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cricboards.app-main-36:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_materialicons.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_materialicons.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.cricboards.app-main-36:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_zocial.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_zocial.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/drawable-mdpi_src_assets_onboarding1.jpeg.flat",
+        "source": "com.cricboards.app-main-36:/drawable-mdpi/src_assets_onboarding1.jpeg"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_ionicons.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_ionicons.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome5_regular.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome5_regular.ttf"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/drawable-mdpi_src_assets_login_bg.jpg.flat",
+        "source": "com.cricboards.app-main-36:/drawable-mdpi/src_assets_login_bg.jpg"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_entypo.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_entypo.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_materialcommunityicons.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_materialcommunityicons.ttf"
+    },
+    {
+        "merged": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-merged_res-34:/drawable_rn_edit_text_material.xml.flat",
+        "source": "/Users/developerb2/.gradle/daemon/8.0.1/com.cricboards.app-main-36:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome5_brands.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_fontawesome5_brands.ttf"
+    },
+    {
+        "merged": "com.cricboards.app-merged_res-34:/raw_node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_octicons.ttf.flat",
+        "source": "com.cricboards.app-main-36:/raw/node_modules_expo_vectoricons_build_vendor_reactnativevectoricons_fonts_octicons.ttf"
     }
 ]

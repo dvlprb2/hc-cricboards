@@ -15,8 +15,8 @@
 12-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:3:5-67
 12-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:3:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.182.0] /Users/developerb2/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.182.0] /Users/developerb2/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.182.0] /Users/developerb2/.gradle/caches/transforms-3/cf29ff37560b55d5bb428345365da654/transformed/flipper-0.182.0/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.182.0] /Users/developerb2/.gradle/caches/transforms-3/cf29ff37560b55d5bb428345365da654/transformed/flipper-0.182.0/AndroidManifest.xml:16:22-73
 14
 15    <application
 15-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:5:5-24:19
@@ -33,112 +33,111 @@
 21-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:7:7-39
 22        android:roundIcon="@mipmap/ic_launcher_round"
 22-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:9:7-52
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme"
-24-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:11:7-38
-25        android:usesCleartextTraffic="true" >
-25-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:8:9-44
-26        <activity
-26-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:11:9-111
-27            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-27-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:11:19-83
-28            android:exported="false" />
-28-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:11:84-108
-29        <activity
-29-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:12:7-23:18
-30            android:name="com.cricboards.MainActivity"
-30-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:13:9-37
-31            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-31-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:15:9-118
-32            android:exported="true"
-32-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:18:9-32
-33            android:label="@string/app_name"
-33-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:14:9-41
-34            android:launchMode="singleTask"
-34-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:16:9-40
-35            android:windowSoftInputMode="adjustResize" >
-35-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:17:9-51
-36            <intent-filter>
-36-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:19:9-22:25
-37                <action android:name="android.intent.action.MAIN" />
-37-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:20:13-65
-37-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:20:21-62
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:21:13-73
-39-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:21:23-70
-40            </intent-filter>
-41        </activity>
-42
-43        <meta-data
-43-->[com.facebook.soloader:soloader:0.10.5] /Users/developerb2/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
-44            android:name="com.facebook.soloader.enabled"
-44-->[com.facebook.soloader:soloader:0.10.5] /Users/developerb2/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
-45            android:value="false" />
-45-->[com.facebook.soloader:soloader:0.10.5] /Users/developerb2/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
-46
-47        <activity
-47-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:23:9-27:75
-48            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-48-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:24:13-93
-49            android:excludeFromRecents="true"
-49-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:25:13-46
-50            android:exported="false"
-50-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:26:13-37
-51            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-51-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:27:13-72
-52        <!--
-53            Service handling Google Sign-In user revocation. For apps that do not integrate with
-54            Google Sign-In, this service will never be started.
-55        -->
-56        <service
-56-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:33:9-37:51
-57            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-57-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
-58            android:exported="true"
-58-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:35:13-36
-59            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-59-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
-60            android:visibleToInstantApps="true" />
-60-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:37:13-48
-61
-62        <activity
-62-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-63-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-64            android:exported="false"
-64-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-65-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-66
-67        <meta-data
-67-->[com.google.android.gms:play-services-basement:18.2.0] /Users/developerb2/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
-68            android:name="com.google.android.gms.version"
-68-->[com.google.android.gms:play-services-basement:18.2.0] /Users/developerb2/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
-69            android:value="@integer/google_play_services_version" />
-69-->[com.google.android.gms:play-services-basement:18.2.0] /Users/developerb2/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
-70
-71        <provider
-71-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-72            android:name="androidx.startup.InitializationProvider"
-72-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-73            android:authorities="com.cricboards.androidx-startup"
-73-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-74            android:exported="false" >
-74-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-75            <meta-data
-75-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-76-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-77                android:value="androidx.startup" />
-77-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-78            <meta-data
-78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/developerb2/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/developerb2/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-80                android:value="androidx.startup" />
-80-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/developerb2/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-81        </provider>
-82    </application>
-83
-84</manifest>
+23        android:theme="@style/AppTheme"
+23-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:11:7-38
+24        android:usesCleartextTraffic="true" >
+24-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:8:9-44
+25        <activity
+25-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:11:9-111
+26            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+26-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:11:19-83
+27            android:exported="false" />
+27-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/debug/AndroidManifest.xml:11:84-108
+28        <activity
+28-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:12:7-23:18
+29            android:name="com.cricboards.MainActivity"
+29-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:13:9-37
+30            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+30-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:15:9-118
+31            android:exported="true"
+31-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:18:9-32
+32            android:label="@string/app_name"
+32-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:14:9-41
+33            android:launchMode="singleTask"
+33-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:16:9-40
+34            android:windowSoftInputMode="adjustResize" >
+34-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:17:9-51
+35            <intent-filter>
+35-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:19:9-22:25
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:20:13-65
+36-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:20:21-62
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:21:13-73
+38-->/Users/developerb2/Documents/Projects/College/CPD/hc-cricboards/android/app/src/main/AndroidManifest.xml:21:23-70
+39            </intent-filter>
+40        </activity>
+41
+42        <meta-data
+42-->[com.facebook.soloader:soloader:0.10.5] /Users/developerb2/.gradle/caches/transforms-3/e781ee4d2287b5a4f2f39aeb65eddad1/transformed/soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+43            android:name="com.facebook.soloader.enabled"
+43-->[com.facebook.soloader:soloader:0.10.5] /Users/developerb2/.gradle/caches/transforms-3/e781ee4d2287b5a4f2f39aeb65eddad1/transformed/soloader-0.10.5/AndroidManifest.xml:13:13-57
+44            android:value="false" />
+44-->[com.facebook.soloader:soloader:0.10.5] /Users/developerb2/.gradle/caches/transforms-3/e781ee4d2287b5a4f2f39aeb65eddad1/transformed/soloader-0.10.5/AndroidManifest.xml:14:13-34
+45
+46        <activity
+46-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:23:9-27:75
+47            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+47-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:24:13-93
+48            android:excludeFromRecents="true"
+48-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:25:13-46
+49            android:exported="false"
+49-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:26:13-37
+50            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+50-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:27:13-72
+51        <!--
+52            Service handling Google Sign-In user revocation. For apps that do not integrate with
+53            Google Sign-In, this service will never be started.
+54        -->
+55        <service
+55-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:33:9-37:51
+56            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+56-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
+57            android:exported="true"
+57-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:35:13-36
+58            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+58-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
+59            android:visibleToInstantApps="true" />
+59-->[com.google.android.gms:play-services-auth:20.5.0] /Users/developerb2/.gradle/caches/transforms-3/5542949afb463c524454c95fd5deaf14/transformed/play-services-auth-20.5.0/AndroidManifest.xml:37:13-48
+60
+61        <activity
+61-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/8286ccfadef75501c29376872e3d1d61/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+62-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/8286ccfadef75501c29376872e3d1d61/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+63            android:exported="false"
+63-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/8286ccfadef75501c29376872e3d1d61/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+64-->[com.google.android.gms:play-services-base:18.0.1] /Users/developerb2/.gradle/caches/transforms-3/8286ccfadef75501c29376872e3d1d61/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+65
+66        <meta-data
+66-->[com.google.android.gms:play-services-basement:18.2.0] /Users/developerb2/.gradle/caches/transforms-3/792f2ef03994b75ff75dd996d6031300/transformed/play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+67            android:name="com.google.android.gms.version"
+67-->[com.google.android.gms:play-services-basement:18.2.0] /Users/developerb2/.gradle/caches/transforms-3/792f2ef03994b75ff75dd996d6031300/transformed/play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+68            android:value="@integer/google_play_services_version" />
+68-->[com.google.android.gms:play-services-basement:18.2.0] /Users/developerb2/.gradle/caches/transforms-3/792f2ef03994b75ff75dd996d6031300/transformed/play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+72            android:authorities="com.cricboards.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+74            <meta-data
+74-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+76                android:value="androidx.startup" />
+76-->[androidx.emoji2:emoji2:1.0.0] /Users/developerb2/.gradle/caches/transforms-3/c9b45f84ddedef897de33334c4271872/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/developerb2/.gradle/caches/transforms-3/99155f0b65bc00673465c6404171891f/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/developerb2/.gradle/caches/transforms-3/99155f0b65bc00673465c6404171891f/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/developerb2/.gradle/caches/transforms-3/99155f0b65bc00673465c6404171891f/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+80        </provider>
+81    </application>
+82
+83</manifest>

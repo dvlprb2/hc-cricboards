@@ -26,6 +26,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({navigation}) => {
 
   const handleSignIn = async () => {
     const {userInfo} = await googleSignIn();
+    console.log(userInfo)
     if (userInfo) {
       navigation.replace('Tabs');
     } else {
