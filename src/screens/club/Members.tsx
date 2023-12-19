@@ -1,8 +1,15 @@
-import {SearchBar} from '../../components/SearchBar';
-import {Badge, Box, Heading, HStack, Spacer, Text, VStack} from 'native-base';
-import {FlatList} from 'react-native';
-import React from 'react';
-import {EmptyList} from '../../components/EmptyList';
+import { SearchBar } from '../../components/SearchBar';
+import { Badge, Box, Heading, HStack, Spacer, Text, VStack, Button, Fab, FormControl, Input, Modal } from 'native-base';
+import { FlatList } from 'react-native';
+import React, { useState, useRef } from 'react';
+import { EmptyList } from '../../components/EmptyList';
+import {
+  MemberDocumentData,
+  createMember,
+} from '../../services/clubs';
+import { getCurrentUser } from '../../services/auth';
+import { getTodayDate } from '../../utils';
+import {Plus} from 'react-native-feather';
 
 interface MemberData {
   id: string;
@@ -12,7 +19,12 @@ interface MemberData {
 }
 
 export const MembersTab: React.FC = () => {
-  const renderItem = ({item}: {item: MemberData}) => {
+  const initialRef = useRef<any>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [memberName, setMemberName] = useState('');
+  const [isInvalid, setIsInvalid] = useState(false);
+
+  const renderItem = ({ item }: { item: MemberData }) => {
     return (
       <Box borderBottomWidth="1" borderColor="coolGray.300" px={4} py={2}>
         <HStack>
@@ -28,13 +40,39 @@ export const MembersTab: React.FC = () => {
           <Badge
             variant="subtle"
             colorScheme="secondary"
-            _text={{fontSize: 'sm'}}
+            _text={{ fontSize: 'sm' }}
             alignSelf="center">
             {item.matches}
           </Badge>
         </HStack>
       </Box>
     );
+  };
+
+  const onModalClose = () => {
+    setShowModal(false);
+    setIsInvalid(false);
+    setMemberName('');
+  };
+
+  const handleAddMember = async () => {
+    if (memberName.length < 3) {
+      setIsInvalid(true);
+    } else {
+      setIsInvalid(false);
+
+      const currentUser = await getCurrentUser();
+
+      createMember({
+        name: memberName,
+        clubs: ['LDQf2R0yHbhW5AleRrHG'],
+        joinDate: getTodayDate(),
+        matches: 0
+      }).then(r => {
+        console.log(r.id);
+        onModalClose();
+      });
+    }
   };
 
   const data: MemberData[] = [
@@ -103,6 +141,59 @@ export const MembersTab: React.FC = () => {
         ListEmptyComponent={<EmptyList />}
         renderItem={renderItem}
       />
+
+      <Fab
+        renderInPortal={true}
+        shadow={2}
+        placement="bottom-right"
+        size="sm"
+        colorScheme="primary"
+        icon={<Plus color="#fff" />}
+        label={
+          <Text fontWeight={600} fontSize="sm" color="white">
+            New Member
+          </Text>
+        }
+        onPress={() => setShowModal(true)}
+      />
+
+      <Modal
+        isOpen={showModal}
+        onClose={onModalClose}
+        initialFocusRef={initialRef}
+        avoidKeyboard
+        safeAreaTop>
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header>Create New Member</Modal.Header>
+          <Modal.Body>
+            <HStack space={2}>
+              <FormControl isInvalid={isInvalid}>
+                <Input
+                  onChangeText={text => setMemberName(text)}
+                  size="lg"
+                  flex={1}
+                  placeholder="Enter name"
+                  ref={initialRef}
+                  value={memberName}
+                />
+                <FormControl.ErrorMessage>
+                  Name is too short
+                </FormControl.ErrorMessage>
+              </FormControl>
+            </HStack>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button
+              size="full"
+              p={2}
+              _text={{ fontSize: 18 }}
+              onPress={handleAddMember}>
+              Save
+            </Button>
+          </Modal.Footer>
+        </Modal.Content>
+      </Modal>
     </>
   );
 };

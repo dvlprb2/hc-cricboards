@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import {Animated, Dimensions, Pressable, StatusBar} from 'react-native';
 import {SceneMap, TabView} from 'react-native-tab-view';
-import {Box, Fab, Icon, Text} from 'native-base';
+import {Box, Fab, Text} from 'native-base';
 import {MembersTab} from './Members';
 import {MatchesTab} from './Matches';
-import {Feather} from '@expo/vector-icons';
 
 const initialLayout = {
   width: Dimensions.get('window').width,
@@ -63,21 +62,6 @@ export const ClubScreen: React.FC<{navigation: any}> = ({navigation}) => {
         renderTabBar={renderTabBar}
         onIndexChange={setIndex}
         initialLayout={initialLayout}
-        style={{marginTop: StatusBar.currentHeight}}
-      />
-      <Fab
-        renderInPortal={true}
-        shadow={2}
-        placement="bottom-right"
-        size="lg"
-        colorScheme="primary"
-        icon={<Icon color="white" as={Feather} name="plus" size="2xl" />}
-        label={
-          <Text fontWeight={600} fontSize="xl" color="white">
-            New Match
-          </Text>
-        }
-        onPress={() => navigation.replace('Teams')}
       />
     </>
   );

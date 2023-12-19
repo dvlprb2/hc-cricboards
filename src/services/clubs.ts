@@ -17,19 +17,28 @@ export interface ClubDocumentData {
   members: Array<string>;
   owner: string;
 }
+
+export interface MemberDocumentData {
+  name: string;
+  matches: number;
+  clubs: Array<string>;
+  joinDate: string;
+}
+
 // Add a new document in collection "clubs"
 export const createClub = async (data: ClubDocumentData) => {
   return await addDoc(collection(db, 'clubs'), data);
 };
+
 // Add a new member in collection "clubs.members"
 export const addMemberToClub = async (clubId: string, memberId: string) => {
   const clubRef = doc(db, 'clubs', clubId);
 
-  // Atomically add a new region to the "members" array field.
   return await updateDoc(clubRef, {
     members: arrayUnion(memberId),
   });
 };
+
 // Delete a member from collection "clubs.members"
 export const removeMemberFromClub = async (
   clubId: string,
@@ -37,10 +46,14 @@ export const removeMemberFromClub = async (
 ) => {
   const clubRef = doc(db, 'clubs', clubId);
 
-  // Atomically remove a region from the "members" array field.
   return await updateDoc(clubRef, {
     members: arrayRemove(memberId),
   });
+};
+
+// Add a new document in collection "members"
+export const createMember = async (data: MemberDocumentData) => {
+  return await addDoc(collection(db, 'members'), data);
 };
 
 export const getClubsByUser = async () => {

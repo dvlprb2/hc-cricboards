@@ -8,8 +8,11 @@ import {
   Stack,
   Text,
   VStack,
+  Fab,
 } from 'native-base';
 import React from 'react';
+import {Plus} from 'react-native-feather';
+
 
 interface MatchData {
   teamA: string;
@@ -76,7 +79,7 @@ export const MatchesTab: React.FC = () => {
     },
   ];
 
-  const renderSectionHeader = (info: {section: Section}) => {
+  const renderSectionHeader = (info: { section: Section }) => {
     return (
       <Center py={4} bg="coolGray.100">
         <Container>
@@ -88,7 +91,7 @@ export const MatchesTab: React.FC = () => {
     );
   };
 
-  const renderItem = ({item}: {item: MatchData}) => {
+  const renderItem = ({ item }: { item: MatchData }) => {
     return (
       <Center px={4} py={1}>
         <Box
@@ -126,13 +129,29 @@ export const MatchesTab: React.FC = () => {
   };
 
   return (
-    <SectionList
-      w="100%"
-      mb="4"
-      sections={sections}
-      keyExtractor={(item, index) => index.toString()}
-      renderItem={renderItem}
-      renderSectionHeader={renderSectionHeader}
-    />
+    <>
+      <SectionList
+        w="100%"
+        mb="4"
+        sections={sections}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={renderItem}
+        renderSectionHeader={renderSectionHeader}
+      />
+      {/* <Fab
+        renderInPortal={true}
+        shadow={2}
+        placement="bottom-right"
+        size="lg"
+        colorScheme="primary"
+        icon={<Plus color="#fff" />}
+        label={
+          <Text fontWeight={600} fontSize="xl" color="white">
+            New Match
+          </Text>
+        }
+        // onPress={() => navigation.replace('Teams')}
+      /> */}
+    </>
   );
 };
