@@ -29,7 +29,7 @@ export const ClubCard: React.FC<ClubCardProps> = ({navigation, item}) => {
               {item.name}
             </Heading>
             <Text color="coolGray.600" fontWeight="400">
-              {item.members} members
+              {item.members.length} members
             </Text>
           </Stack>
         </HStack>

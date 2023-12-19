@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
 import {
   Button,
@@ -14,9 +14,15 @@ import {
 import {ClubCard} from '../../components/ClubCard';
 import {MatchCard} from '../../components/MatchCard';
 import {Plus} from 'react-native-feather';
+import {
+  ClubDocumentData,
+  createClub,
+  getClubsByUser,
+} from '../../services/clubs';
+import {getCurrentUser} from '../../services/auth';
 
 interface HomeScreenProps {
-  navigation: any; // Replace 'any' with the actual navigation prop type
+  navigation: any;
 }
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
@@ -24,10 +30,21 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   const [showModal, setShowModal] = useState(false);
   const [clubName, setClubName] = useState('');
   const [isInvalid, setIsInvalid] = useState(false);
-  const [clubData] = useState(clubs);
+  const [clubs, setClubs] = useState<ClubDocumentData[]>([]);
   const [recentMatchData] = useState(recentMatches);
 
-  const renderClubCard = ({item}: {item: any}) => (
+  useEffect(() => {
+    getClubsByUser().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
+        console.log(doc.id, ' => ', doc.data());
+      });
+      const data: ClubDocumentData[] = [];
+      querySnapshot.forEach(doc => data.push(doc.data() as ClubDocumentData));
+      setClubs(data);
+    });
+  }, [!showModal]);
+
+  const renderClubCard = ({item}: {item: ClubDocumentData}) => (
     <ClubCard item={item} navigation={navigation} />
   );
 
@@ -41,6 +58,25 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
     setClubName('');
   };
 
+  const handleAddClub = async () => {
+    if (clubName.length < 3) {
+      setIsInvalid(true);
+    } else {
+      setIsInvalid(false);
+
+      const currentUser = await getCurrentUser();
+
+      createClub({
+        name: clubName,
+        members: [],
+        owner: currentUser?.id!!,
+      }).then(r => {
+        console.log(r.id);
+        onModalClose();
+      });
+    }
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <VStack margin={3} space={3}>
@@ -49,7 +85,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
         </Heading>
         <FlatList
           horizontal
-          data={clubData}
+          data={clubs}
           renderItem={renderClubCard}
           keyExtractor={(item, index) => index.toString()}
           showsHorizontalScrollIndicator={false}
@@ -110,7 +146,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
             </HStack>
           </Modal.Body>
           <Modal.Footer>
-            <Button size="full" p={2} _text={{fontSize: 18}}>
+            <Button
+              size="full"
+              p={2}
+              _text={{fontSize: 18}}
+              onPress={handleAddClub}>
               Save
             </Button>
           </Modal.Footer>
@@ -119,25 +159,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
     </SafeAreaView>
   );
 };
-
-const clubs = [
-  {
-    name: 'Club 1',
-    members: 11,
-  },
-  {
-    name: 'Club 2',
-    members: 14,
-  },
-  {
-    name: 'Club 3',
-    members: 25,
-  },
-  {
-    name: 'Club 4',
-    members: 56,
-  },
-];
 
 const recentMatches = [
   {
