@@ -51,16 +51,27 @@ export const removeMemberFromClub = async (
   });
 };
 
-// Add a new document in collection "members"
-export const createMember = async (data: MemberDocumentData) => {
-  return await addDoc(collection(db, 'members'), data);
-};
 
 export const getClubsByUser = async () => {
   const currentUser = await getCurrentUser();
   const q = query(
     collection(db, 'clubs'),
     where('owner', '==', currentUser?.id),
+  );
+
+  return await getDocs(q);
+};
+
+// Add a new document in collection "members"
+export const createMember = async (data: MemberDocumentData) => {
+  return await addDoc(collection(db, 'members'), data);
+};
+
+
+export const getMembersByClub = async () => {
+  const q = query(
+    collection(db, 'members'),
+    where('clubs', 'array-contains', 'LDQf2R0yHbhW5AleRrHG'),
   );
 
   return await getDocs(q);

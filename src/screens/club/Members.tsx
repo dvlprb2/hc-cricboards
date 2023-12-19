@@ -1,30 +1,34 @@
-import { SearchBar } from '../../components/SearchBar';
-import { Badge, Box, Heading, HStack, Spacer, Text, VStack, Button, Fab, FormControl, Input, Modal } from 'native-base';
+import { Badge, Box, Button, Fab, FormControl, HStack, Heading, Input, Modal, Spacer, Text, VStack } from 'native-base';
+import React, { useEffect, useRef, useState } from 'react';
 import { FlatList } from 'react-native';
-import React, { useState, useRef } from 'react';
+import { Plus } from 'react-native-feather';
 import { EmptyList } from '../../components/EmptyList';
+import { SearchBar } from '../../components/SearchBar';
 import {
   MemberDocumentData,
   createMember,
+  getMembersByClub,
 } from '../../services/clubs';
-import { getCurrentUser } from '../../services/auth';
 import { getTodayDate } from '../../utils';
-import {Plus} from 'react-native-feather';
-
-interface MemberData {
-  id: string;
-  name: string;
-  joinDate: string;
-  matches: string;
-}
 
 export const MembersTab: React.FC = () => {
   const initialRef = useRef<any>(null);
   const [showModal, setShowModal] = useState(false);
   const [memberName, setMemberName] = useState('');
   const [isInvalid, setIsInvalid] = useState(false);
+  const [members, setMembers] = useState<MemberDocumentData[]>([]);
 
-  const renderItem = ({ item }: { item: MemberData }) => {
+
+  useEffect(() => {
+    getMembersByClub().then(querySnapshot => {
+      const data: MemberDocumentData[] = [];
+      querySnapshot.forEach(doc => data.push(doc.data() as MemberDocumentData));
+      console.log(data)
+      setMembers(data);
+    });
+  }, [!showModal]);
+
+  const renderItem = ({ item }: { item: MemberDocumentData }) => {
     return (
       <Box borderBottomWidth="1" borderColor="coolGray.300" px={4} py={2}>
         <HStack>
@@ -42,7 +46,7 @@ export const MembersTab: React.FC = () => {
             colorScheme="secondary"
             _text={{ fontSize: 'sm' }}
             alignSelf="center">
-            {item.matches}
+            {`${item.matches} MATCHES`}
           </Badge>
         </HStack>
       </Box>
@@ -61,8 +65,6 @@ export const MembersTab: React.FC = () => {
     } else {
       setIsInvalid(false);
 
-      const currentUser = await getCurrentUser();
-
       createMember({
         name: memberName,
         clubs: ['LDQf2R0yHbhW5AleRrHG'],
@@ -75,68 +77,11 @@ export const MembersTab: React.FC = () => {
     }
   };
 
-  const data: MemberData[] = [
-    {
-      id: '1',
-      name: 'Bittu Patel',
-      joinDate: 'June 16, 2023',
-      matches: '11 MATCHES',
-    },
-    {
-      id: '2',
-      name: 'Smit',
-      joinDate: 'May 25, 2023',
-      matches: '25 MATCHES',
-    },
-    {
-      id: '3',
-      name: 'Rahul Shah',
-      joinDate: 'May 02, 2023',
-      matches: '2 MATCHES',
-    },
-    {
-      id: '4',
-      name: 'Dhruv Jani',
-      joinDate: 'February 02, 2023',
-      matches: '9 MATCHES',
-    },
-    {
-      id: '5',
-      name: 'Sachin Patel',
-      joinDate: 'March 31, 2023',
-      matches: '18 MATCHES',
-    },
-    {
-      id: '6',
-      name: 'Jigar Patel',
-      joinDate: 'January 15, 2023',
-      matches: '45 MATCHES',
-    },
-    {
-      id: '7',
-      name: 'Soury Patel',
-      joinDate: 'March 12, 2023',
-      matches: '26 MATCHES',
-    },
-    {
-      id: '8',
-      name: 'Montu Patel',
-      joinDate: 'May 09, 2023',
-      matches: '5 MATCHES',
-    },
-    {
-      id: '9',
-      name: 'Ronak Soni',
-      joinDate: 'June 02, 2023',
-      matches: '7 MATCHES',
-    },
-  ];
-
   return (
     <>
       <FlatList
-        keyExtractor={item => item.id}
-        data={data}
+        keyExtractor={item => item.name + Date.now()}
+        data={members}
         ListHeaderComponent={<SearchBar my={3} />}
         ListEmptyComponent={<EmptyList />}
         renderItem={renderItem}
